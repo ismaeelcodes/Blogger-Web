@@ -1,0 +1,32 @@
+/* Resetting Margin and Padding and Setting Box sizing to Border Box*/
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.flexrow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.maintitle a{
+  padding: 1rem 1rem; 
+  font-size: 2.1rem;
+}
+
+.navbar-items{
+    display: flex;
+    margin: 2rem 2rem;
+}
