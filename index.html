@@ -9,35 +9,68 @@
     <!--Style Sheet-->
     <link rel="stylesheet" href="./CSS/style.css">
 
+    <!--Icons Taken From:-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+    <!--Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
+
     <!-------------<<<<<<<<<<Header>>>>>>>>------------->
-    <header class="flexrow">
+    <header class="header flexrow">
     
+
+
     <!-----------------[[Main Title]]------------------->
-     <div class="maintitle flexrow">
+     <div class="maintitle flexrow spacesbetween">
          <a href="#">Blogger</a>
      </div>
     <!-----------------[Main Title]------------------->
+
+    
     <!-----------------[[Navigation Bar]]----------------->
-    <nav class="navbar flexrow">
-      <ul class="navbar-items">
+    <nav class="navbar flexrow spacesbetween dropdown">
+      <ul class="navbar-items collapse">
           <li class="navbar-links"><a href="#">Home</a></li>
           <li class="navbar-links"><a href="#">Pages</a></li>
           <li class="navbar-links"><a href="#">Albums</a></li>   
           <li class="navbar-links"><a href="#">Contact Us</a></li>
       </ul>
+   
     </nav>  
-    <!----------------[Navigation Bar]----------------->
+
+    
+
     <!----------------[[Icons]]------------------->
-     <div class="icons flexrow">
-     <a href="#">F</a>
-     <a href="#">G</a>
-     <a href="#">Y</a>
-     <a href="#">I</a>    
+     <div class="icons flexrow spacesbetween dropdown">
+        <a href="#"><i class="uil uil-twitter"></i></a>
+        <a href="#"><i class="uil uil-youtube"></i></a>
+        <a href="#"><i class="uil uil-instagram"></i></a>
+        <a href="#"><i class="uil uil-github"></i></a>    
      </div>
+
+
+     <div class="collapsemenu">
+        <div class="collapsebars">
+      <i class="uil uil-bars"></i>
+  </div>
+  </div>
+    <!----------------[Navigation Bar]----------------->
+
+
+
+
     
     </header>
+    <!--Jquery File-->
+    <script src="./JS/Jquery.min.js"></script>
+
+
     <!--JS File-->
     <script src="./JS/main.js"></script>
 </body>

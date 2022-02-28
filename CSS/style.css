@@ -5,6 +5,23 @@ html, body{
     box-sizing: border-box;
 }
 
+/* Making Variables */
+:root{
+    --cotton: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
+    --midgreen: #2a9d8f;
+    --ocean: #00b4d8;
+    --skin: #e29578;
+    --blackishgreen: #081c15;
+
+    --Fredroka: 'Fredoka', cursive;
+    --JosefinSans: 'Josefin Sans', cursive;
+}
+/* Making Variables */
+
+
+
+/* Universal Properties for elements*/
 a{
     text-decoration: none;
 }
@@ -13,6 +30,15 @@ ul{
     list-style-type: none;
 }
 
+/* Universal Properties for elements*/
+
+
+.navbar{
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+
+}
 
 .flexrow{
     display: flex;
@@ -22,11 +48,102 @@ ul{
 }
 
 .maintitle a{
-  padding: 1rem 1rem; 
+  padding: 1.5rem 1.2rem; 
   font-size: 2.1rem;
+  font-family: var(--Fredroka);
+  font-weight: 700;
+  color: darkslategrey;
 }
+
+.collapsemenu{
+   position: absolute;
+   top: 0;
+   right: 1rem;
+   cursor: pointer;
+   display: flex;
+   justify-content: flex-end;
+   padding: 2rem 0rem;
+}
+
+
+.collapsebars{
+   font-size: 1.7rem;
+   display: none;
+}
+
+
+
 
 .navbar-items{
     display: flex;
-    margin: 2rem 2rem;
+    font-family: var(--Fredroka);
+    font-weight: 700;
+    position: relative;
+    top: -1.8rem;
+}
+
+.navbar-links{
+    display: flex;
+    font-size: 1.3rem;
+    padding: 3rem 1rem;
+}
+
+.navbar-links a{
+    color: darkslategrey;
+}
+
+.icons{
+    font-size: 1.4rem;
+    padding: 2rem;
+    height: 0rem;
+    min-height: 1vh;
+}
+
+.icons a{
+    padding: 0rem 0.2rem;
+    color: darkslategrey;
+}
+
+.navbar-links:hover{
+    background-color: var(--midgreen);
+}
+
+.navbar-links a:hover{
+    color: var(--blackishgreen);
+    
+}
+
+.icons a:hover{
+    color: var(--ocean);
+}
+
+
+
+/* Media Query for less than or equal to 750px */
+@media only screen and (max-width:792px){
+     .flexrow{ 
+      flex-direction: column;
+     }
+
+     .navbar{
+        height: 0rem;
+        min-height:  2vh;
+        overflow: hidden;
+    
+    }
+
+    .icons{
+        display: none;
+    }
+
+     .collapsebars{
+         display: initial;
+        
+     }
+     
+     .collapse{
+        height: 30rem;
+        display: initial;
+    }
+        
 }
