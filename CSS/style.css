@@ -5,6 +5,9 @@ html, body{
     box-sizing: border-box;
 }
 
+/*xx Resetting Margin and Padding and Setting Box sizing to Border Box xx*/
+
+
 /* Making Variables */
 :root{
     --cotton: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
@@ -17,27 +20,18 @@ html, body{
     --Fredroka: 'Fredoka', cursive;
     --JosefinSans: 'Josefin Sans', cursive;
 }
-/* Making Variables */
+/*xx Making Variables xx*/
 
 
 
 /* Universal Properties for elements*/
 a{
     text-decoration: none;
+    color: black;
 }
 
 ul{
     list-style-type: none;
-}
-
-/* Universal Properties for elements*/
-
-
-.navbar{
-    height: 0rem;
-    min-height: 10vh;
-    overflow: hidden;
-
 }
 
 .flexrow{
@@ -46,6 +40,37 @@ ul{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+p{
+    font-size: 1.3rem;
+    font-family: var(--Fredroka);
+}
+
+hr{
+  margin: 3rem;
+}
+
+.postdetails{
+    font-family: var(--Fredroka);
+}
+
+/*xx Universal Properties for elements xx*/
+
+
+
+/* Header */
+
+
+/* Customizing the Navbar*/
+
+.navbar{
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+
+}
+
+/*Setting width and padding, customizing the main title and adding function to the collapse menu*/
 
 .maintitle a{
   padding: 1.5rem 1.2rem; 
@@ -60,8 +85,6 @@ ul{
    top: 0;
    right: 1rem;
    cursor: pointer;
-   display: flex;
-   justify-content: flex-end;
    padding: 2rem 0rem;
 }
 
@@ -71,9 +94,11 @@ ul{
    display: none;
 }
 
+/*xx Setting width and padding, customizing the main title and adding function to the collapse menu xx*/
 
 
 
+/*Navigation Menu Customization*/
 .navbar-items{
     display: flex;
     font-family: var(--Fredroka);
@@ -91,6 +116,11 @@ ul{
 .navbar-links a{
     color: darkslategrey;
 }
+
+/*xx Navigation Menu Customization xx*/
+
+
+/*Customizing the icons and positioning them + Adding Hover effects to the links*/
 
 .icons{
     font-size: 1.4rem;
@@ -117,7 +147,447 @@ ul{
     color: var(--ocean);
 }
 
+/*xx Customizing the icons and positioning them + Adding Hover effects to the links xx*/
 
+/*xx Customizing the Navbar xx*/
+
+/*xx Header xx*/
+
+/* Main Section */
+
+/* Page Title */
+.Pagetitle{
+    background: url(../assets/Background-image.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.titletext{
+    text-align: center;
+    color: white;
+    font-family: var(--JosefinSans);
+    padding-top: 10rem;
+    font-size: 1.7rem;
+}
+
+.btn{
+    background-color: var(--ocean);
+    border: none;
+    border-radius: 40px;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: var(--Fredroka);
+    font-weight: bolder;
+    color: var(--blackishgreen);
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--ocean);
+    color: white;
+}
+
+
+/*xx Page Title xx*/
+
+/* Articles Slide */
+
+ .container{
+     margin: 0 5vw;
+     position: relative;
+ }
+ .blog{
+     background-image: url(../assets/Abract01.png);
+     background-repeat: no-repeat;
+     background-position: right;
+     height: 100vh;
+     width: 100%;
+     background-size: 52%;
+ }
+ 
+ .blog-post{
+     padding-top: 7rem;
+ }
+
+ .previewimage{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     width: 70%;
+     margin: 2rem 5rem;
+     box-shadow: 1px 1px 3px;
+ }
+
+ .blogtitle{
+     padding: 2rem 1rem;
+     font-family: var(--JosefinSans);
+ }
+
+ .blogtitle h3{
+     font-weight: bolder;
+ }
+
+ .btn-blog:hover{
+     color: white;
+     background-color: var(--ocean);
+     border: none;
+
+ }
+
+ .blogtitle span{
+     display: block;
+     font-family: var(--Fredroka);
+     font-weight: bold;
+     margin: .2rem 0;
+ }
+
+
+ .owl-nav{
+     position: absolute;
+     top: 0%;
+     margin: 0 auto;
+     width: 100%;
+ }
+
+.owl-nav .owl-prev .owl-nav-prev, .owl-nav .owl-next .owl-nav-next{
+     font-size: 2rem;
+     background: transparent;
+     color: var(--blackishgreen);
+ }
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: var(--ocean);
+}
+/*xx Articles Slide xx*/
+
+
+
+
+/* Main Blog Posts */
+.maincontent{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.post{
+    width: 100%;
+}
+.posts{
+    margin: 0 5rem;
+}
+
+.postimage{
+    position: relative;
+}
+
+.postimage > div{
+    overflow: hidden;
+}
+
+.postimage div img{
+    width: 100%;
+    
+}
+
+
+.postimage div img:hover{
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
+
+.post{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.postdetails{
+    background: var(--ocean);
+    position: absolute;
+    bottom: -1%;
+    left: 22vw;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.postdetails span{
+    margin: 0 0.6rem;
+}
+
+
+.posttitle h2{
+    text-align: center;
+    font-family: var(--JosefinSans);
+    font-size: 2rem;
+}
+
+
+.posttitle{
+    display: flex;
+    flex-direction: column;
+}
+
+.postbtn i{
+    font-size: 1.5rem;
+}
+
+.postbtn:hover{
+    color: white;
+    background-color: var(--ocean);
+    border: none;
+}
+
+.pagenav{
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 5rem;
+}
+
+.pagenav a{
+    margin: 0 1rem;
+}
+
+.num{
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+/*xx Main Blog Posts xx*/
+
+
+/*Sidebar*/
+
+/* Category */
+aside h1{
+    font-size: 2.5rem;
+    font-family: var(--JosefinSans);
+}
+
+.listitem{
+    display: flex;
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-family: var(--Fredroka);
+    background-color: var(--ocean);
+    justify-content: space-between;
+    padding: 0.6rem;
+    border-radius: 20px;
+    width: 60%;
+
+}
+/*xx Category xx*/
+
+/* Popular Blog*/
+.popularblog{
+    margin-top: 15rem;
+}
+
+
+
+.popularblog .post .postimage div img{
+    width: 96%;
+}
+
+.popularblog .post .posttitle > h2{
+    text-align: start;
+    font-size: 1.6rem;
+}
+
+.popularblog .post .postimage .postdetails{
+    padding: .4rem .1rem;
+    bottom: 0rem;
+    left: 0.5rem;
+    background-color: black;
+    color: white;
+}
+/*xx Popular Blog xx*/
+
+/* Newsletter */
+.form1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#input1{
+    padding: 1rem 2rem;
+    text-align: center;
+    width: 50%;
+    font-size: 1rem;
+}
+
+.form-button{
+    margin-top: 1rem;
+    
+}
+
+.form-button:hover{
+    color: white;
+    background-color: var(--ocean);
+    border: none;
+}
+/*xx Newsletter xx*/
+
+/*Popular Tags*/
+
+.populartags{
+    padding: 5rem 0;
+}
+
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag{
+    background: var(--cotton);
+    padding: .5rem .2rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    font-family: var(--JosefinSans);
+    color: var(--blackishgreen);
+    font-weight: bolder;
+}
+
+/*xx Popular Tags xx*/
+
+
+/*xx Sidebar xx*/
+
+/*xx Main Section xx*/
+
+
+/* Footer */
+.footer{
+    height: 100%;
+    background-color: rgba(7, 7, 7, 0.993);
+    position: relative;
+}
+
+.footer .footcontainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer .footcontainer > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 2rem 2rem;
+}
+
+/* About Us */
+.about-us h1{
+    color: white;
+    font-family: var(--JosefinSans);
+}
+.about-us p{
+    color: grey;
+    font-family: var(--Fredroka);
+}
+
+/*x About Us xx*/
+
+/* Newsletter */
+.footer .footcontainer .newsletter h1{
+    color: white;
+    font-family: var(--JosefinSans);
+}
+
+#input2{
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.footcontainer .newsletter i{
+    color: white;
+    background-color: var(--ocean);
+    padding: 1.1rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+/*xx Newsletter xx*/
+
+
+/* Instagram */
+.footer .instagram div > img{
+ display: inline-block;
+ width: 25%;
+ height: 50%;
+ margin: .3rem .1rem;
+}
+
+.instagram h1{
+    color: white;
+    font-family: var(--JosefinSans);
+}
+
+/*xx Instagram xx*/
+
+/* Follow Us*/
+
+.follow h1{
+    color: white;
+    font-family: var(--JosefinSans);
+}
+
+.follow p{
+    color: grey;
+}
+.follow div i{
+    color: white;
+    padding: 0 .3rem;
+    font-size: 2rem;
+}
+
+/*xx Follow Us xx*/
+
+
+/* CopyRights */
+
+.copyright, .copyright a{
+    color: white;
+}
+
+.copyright h2{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-family: var(--Fredroka);
+}
+
+/*xx CopyRights xx*/
+
+
+/* Moveup Button */
+.moveup span i{
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.moveup span i:hover{
+    color: var(--ocean);
+}
+
+/*xx Move up Button xx*/
+
+
+/*xx Footer xx*/
 
 /* Media Query for less than or equal to 750px */
 @media only screen and (max-width:792px){
@@ -132,18 +602,70 @@ ul{
     
     }
 
-    .icons{
-        display: none;
-    }
-
-     .collapsebars{
-         display: initial;
-        
-     }
-     
-     .collapse{
-        height: 30rem;
+    
+    .collapsebars{
         display: initial;
     }
-        
+    .icons{
+    display: none;
+    }
+    .collapse{
+        height: 30rem;
+        display: initial;
+        transition: height 1s ease-in-out;
+    }
+    
+    .icons{
+        padding: 0rem 0.7rem;
+        height: 2rem;
+    }
+
+    .maincontent{
+        grid-template-columns: 100%
+    }
+    
+    .footer .footcontainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pagenav{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .postdetails{
+        left: 17vw;
+    }
+}
+
+/* Media Query for less than or equal to 352px */
+@media only screen and (max-width:600px){
+     .maincontent{
+         height: 150%;
+     }
+
+     .pagenav{
+         display: flex;
+         flex-direction: row;
+         width: 20rem;
+         position: relative;
+         right: 9rem;
+     }
+
+     .footer .newsletter i{
+         padding: 1rem 0.2rem;
+     }
+
+     .posts .postdetails{
+         display: none;
+     }
+
+     .posts .postimage div img{
+         height: 300px;
+         width: fit-content;
+         position: relative;
+         right: 15rem;
+     }
+
 }

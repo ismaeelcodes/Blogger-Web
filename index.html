@@ -1,77 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogger - Tours and Travels</title>
-    
+
+    <!--Owl Carousel StyleSheet-->
+    <link rel="stylesheet" href="./CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="./CSS/owl.theme.default.min.css">
+
     <!--Style Sheet-->
     <link rel="stylesheet" href="./CSS/style.css">
 
     <!--Icons Taken From:-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    
+
     <!--Fonts Link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Josefin+Sans:wght@300&display=swap"
+        rel="stylesheet">
 
 
 </head>
+
 <body>
 
     <!-------------<<<<<<<<<<Header>>>>>>>>------------->
     <header class="header flexrow">
-    
-
-
-    <!-----------------[[Main Title]]------------------->
-     <div class="maintitle flexrow spacesbetween">
-         <a href="#">Blogger</a>
-     </div>
-    <!-----------------[Main Title]------------------->
-
-    
-    <!-----------------[[Navigation Bar]]----------------->
-    <nav class="navbar flexrow spacesbetween dropdown">
-      <ul class="navbar-items collapse">
-          <li class="navbar-links"><a href="#">Home</a></li>
-          <li class="navbar-links"><a href="#">Pages</a></li>
-          <li class="navbar-links"><a href="#">Albums</a></li>   
-          <li class="navbar-links"><a href="#">Contact Us</a></li>
-      </ul>
-   
-    </nav>  
-
-    
-
-    <!----------------[[Icons]]------------------->
-     <div class="icons flexrow spacesbetween dropdown">
-        <a href="#"><i class="uil uil-twitter"></i></a>
-        <a href="#"><i class="uil uil-youtube"></i></a>
-        <a href="#"><i class="uil uil-instagram"></i></a>
-        <a href="#"><i class="uil uil-github"></i></a>    
-     </div>
-
-
-     <div class="collapsemenu">
-        <div class="collapsebars">
-      <i class="uil uil-bars"></i>
-  </div>
-  </div>
-    <!----------------[Navigation Bar]----------------->
 
 
 
+        <!-----------------[[Main Title]]------------------->
+        <div class="maintitle flexrow spacesbetween">
+            <a href="#">Blogger</a>
+        </div>
+        <!-----------------[Main Title]------------------->
 
-    
+
+        <!-----------------[[Navigation Bar]]----------------->
+        <nav class="navbar flexrow spacesbetween dropdown">
+            <ul class="navbar-items collapse">
+                <li class="navbar-links"><a href="#">Home</a></li>
+                <li class="navbar-links"><a href="#">Pages</a></li>
+                <li class="navbar-links"><a href="#">Albums</a></li>
+                <li class="navbar-links"><a href="#">Contact Us</a></li>
+            </ul>
+
+        </nav>
+        <!--------x-------[Navigation Bar]-----x----------->
+
+
+
+        <!----------------[[Icons]]------------------->
+        <div class="icons flexrow spacesbetween dropdown">
+            <a href="#"><i class="uil uil-twitter"></i></a>
+            <a href="#"><i class="uil uil-youtube"></i></a>
+            <a href="#"><i class="uil uil-instagram"></i></a>
+            <a href="#"><i class="uil uil-github"></i></a>
+        </div>
+        <!----------------[Icons]------------------->
+
+
+
+        <!----------------[[Collapse Menu]]------------------->
+        <div class="collapsemenu">
+            <div class="collapsebars">
+                <i class="uil uil-bars"></i>
+            </div>
+        </div>
+        <!----------------[Collapse Menu]------------------->
+
+
+
+
     </header>
+    <!------x------<<<<<<<<<<Header>>>>>>>>------x------>
+
+
+
+    <!-----------<<<<<<<<<<<Main Section>>>>>>>>>>------>
+    <main>
+
+        <!----------------------[[Page Title]]--------------->
+        <section class="Pagetitle">
+            <div class="titletext">
+                <h4>Tours & Travels</h4>
+                <h1>Amazing Places on Earth</h1>
+                <button class="btn">Explore</button>
+            </div>
+        </section>
+        <!---------------------[Page Title]-------------->
+
+        <!------------------[[Articles Slide]]------------>
+        <section class="slide">
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-carousel owl-theme blog-post">
+
+                        <!--First Article-->
+                        <div class="previewimage">
+                            <img src="./assets/post-2.jpg" alt="preview1">
+                            <div class="blogtitle">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nesciunt!</h3>
+                                <button class="btn btn-blog">Fashion</button>
+                                <span>5 minutes</span>
+                            </div>
+                        </div>
+                        <!--x First Article x-->
+
+                        <!--Second Article-->
+                        <div class="previewimage">
+                            <img src="./assets/post-3.jpg" alt="preview1">
+                            <div class="blogtitle">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nesciunt!</h3>
+                                <button class="btn btn-blog">Fashion</button>
+                                <span>52 minutes</span>
+                            </div>
+                        </div>
+                        <!--x Second Article x-->
+
+                        <!--Third Article-->
+                        <div class="previewimage">
+                            <img src="./assets/post-4.png" alt="preview1">
+                            <div class="blogtitle">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nesciunt!</h3>
+                                <button class="btn btn-blog">Fashion</button>
+                                <span>10 minutes</span>
+                            </div>
+                        </div>
+                        <!--x Third Article x-->
+
+                        <!--Fourth Article-->
+                        <div class="previewimage">
+                            <img src="./assets/assets/Blog-post/post-5.png" alt="preview1">
+                            <div class="blogtitle">
+                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nesciunt!</h3>
+                                <button class="btn btn-blog">Fashion</button>
+                                <span>39 minutes</span>
+                            </div>
+                        </div>
+                        <!--x Fourth Article x-->
+
+                    </div>
+                    <!-- Adding Navigation Icons for Slide -->
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev">
+                            <i class="uil uil-arrow-left"></i>
+                        </span>
+                        <span class="owl-nav-next">
+                            <i class="uil uil-arrow-right"></i>
+                        </span>
+                    </div>
+                    <!--x Adding Navigation Icons for Slide x-->
+                </div>
+            </div>
+        </section>
+        <!----------------[Articles Slide]------------>
+
+
+
+
+        <!-----------------[[Site Content]]---------------->
+
+
+        <!----------------- [[Main Blog Posts]] ----------->
+        <section class="maincontainer">
+            <div class="maincontent">
+                <div class="posts">
+
+                    <!-- Post 1 -->
+                    <div class="post">
+                        <div class="postimage">
+                            <div>
+                                <img src="./assets/assets/Blog-post/blog1.png" alt="Blog1">
+                            </div>
+                            <div class="postdetails">
+                                <span><i class="uil uil-user"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="uil uil-calendar-alt"></i>&nbsp;&nbsp;March 11, 2022</span>
+                                <span>5 Comments</span>
+                            </div>
+                        </div>
+                        <div class="posttitle">
+                            <h2><a href="#">Do you know why women are more motivated than men nowadays?</a></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellendus nisi
+                                incidunt illum, sequi ad eaque. Fugit porro, voluptas quod exercitationem accusantium
+                                ut. Cum odit ipsam voluptate itaque, voluptates aliquam.</p>
+                            <button class="btn postbtn">Read More <i class="uil uil-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <!--x Post 1 x-->
+                    <hr>
+
+                    <!-- Post 2 -->
+                    <div class="post">
+                        <div class="postimage">
+                            <div>
+                                <img src="./assets/assets/Blog-post/blog4.png" alt="Blog1">
+                            </div>
+                            <div class="postdetails">
+                                <span><i class="uil uil-user"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="uil uil-calendar-alt"></i>&nbsp;&nbsp;March 12, 2022</span>
+                                <span>6 Comments</span>
+                            </div>
+                        </div>
+                        <div class="posttitle">
+                            <h2><a href="#">Do you know why those who work hard spend so much effort and time
+                                    working?</a></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellendus nisi
+                                incidunt illum, sequi ad eaque. Fugit porro, voluptas quod exercitationem accusantium
+                                ut. Cum odit ipsam voluptate itaque, voluptates aliquam.</p>
+                            <button class="btn postbtn">Read More <i class="uil uil-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!--x Post 2 x-->
+                    <hr>
+
+                    <!-- Post 3 -->
+                    <div class="post">
+                        <div class="postimage">
+                            <div>
+                                <img src="./assets/assets/Blog-post/blog2.png" alt="Blog1">
+                            </div>
+                            <div class="postdetails">
+                                <span><i class="uil uil-user"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="uil uil-calendar-alt"></i>&nbsp;&nbsp;March 13, 2022</span>
+                                <span>7 Comments</span>
+                            </div>
+                        </div>
+                        <div class="posttitle">
+                            <h2><a href="#">Do you know why eating healthy affects your physical and mental health?</a>
+                            </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellendus nisi
+                                incidunt illum, sequi ad eaque. Fugit porro, voluptas quod exercitationem accusantium
+                                ut. Cum odit ipsam voluptate itaque, voluptates aliquam.</p>
+                            <button class="btn postbtn">Read More <i class="uil uil-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <!--x Post 3 x-->
+                    <hr>
+
+                    <!-- Post 4 -->
+                    <div class="post">
+                        <div class="postimage">
+                            <div>
+                                <img src="./assets/assets/Blog-post/blog3.png" alt="Blog1">
+                            </div>
+                            <div class="postdetails">
+                                <span><i class="uil uil-user"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="uil uil-calendar-alt"></i>&nbsp;&nbsp;March 14, 2022</span>
+                                <span>8 Comments</span>
+                            </div>
+                        </div>
+                        <div class="posttitle">
+                            <h2><a href="#">Do you know why the world is on a one way trip to destruction?</a></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellendus nisi
+                                incidunt illum, sequi ad eaque. Fugit porro, voluptas quod exercitationem accusantium
+                                ut. Cum odit ipsam voluptate itaque, voluptates aliquam.</p>
+                            <button class="btn postbtn">Read More <i class="uil uil-arrow-right"></i></button>
+                        </div>
+                    </div>
+ 
+                    <!--x Post 4 x-->
+                    <hr>
+
+                    <!-- Page Navigation Menu-->
+                    <div class="pagenav flexrow">
+                        <a href="#"><i class="uil uil-angle-left"></i></a>
+                        <a href="#" class="num">1</a>
+                        <a href="#" class="num">2</a>
+                        <a href="#" class="num">3</a>
+                        <a href="#"><i class="uil uil-angle-right"></i></a>
+                    </div>
+                </div>
+                <!--x Page Navigation Menu x-->
+
+
+            <!----------------- [Main Blog Posts] ----------->    
+
+            <!------------[[SideBar]]------------>    
+                <aside>
+                    <!-- Category -->
+                    <div class="category">
+                        <h1>Category</h1>
+                        <ul class="list">
+                            <li class="listitem">
+                                <a href="#">Software</a>
+                                <span>(05)</span>
+                            </li>
+                            <li class="listitem">
+                                <a href="#">Lifestyle</a>
+                                <span>(1)</span>
+                            </li>
+                            <li class="listitem">
+                                <a href="#">Health</a>
+                                <span>(35)</span>
+                            </li>
+                            <li class="listitem">
+                                <a href="#">Fashion</a>
+                                <span>(20)</span>
+                            </li>
+                            <li class="listitem">
+                                <a href="#">Art</a>
+                                <span>(15)</span>
+                            </li>
+                        </ul>
+                        <!--x Category x-->
+                    </div>
+
+                    <!-- Popular Blog -->
+                    <div class="popularblog">
+                        <h1>Popular Posts</h1>
+
+                        <!-- Blog 1 -->
+                        <div class="post">
+                            <div class="postimage">
+                                <div>
+                                    <img src="./assets/assets/popular-post/m-blog-1.jpg" alt="Blog1">
+                                </div>
+                                <div class="postdetails">
+                                    <span><i class="uil uil-calendar-alt"></i>&nbsp;&nbsp;March 19, 2022</span>
+                                    <span>8 Comments</span>
+                                </div>
+                            </div>
+                            <div class="posttitle">
+                                <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam,
+                                        possimus!</a></h2>
+                            </div>
+                         <!--x Blog 1 x-->
+                         
+
+                         <!-- Blog 2 -->
+                        <div class="post">
+                                <div class="postimage">
+                                    <div>
+                                        <img src="./assets/assets/popular-post/m-blog-2.jpg" alt="Blog1">
+                                    </div>
+                                    <div class="postdetails">
+                                        <span><i class="uil uil-calendar-alt"></i>&nbsp;&nbsp;March 18, 2022</span>
+                                        <span>6 Comments</span>
+                                    </div>
+                                </div>
+                                <div class="posttitle">
+                                    <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam,
+                                            possimus!</a></h2>
+                                </div>
+                        <!--x Blog 2 x--> 
+                        
+                        
+                        <!-- Blog 3 -->
+                        <div class="post">
+                                <div class="postimage">
+                                    <div>
+                                         <img src="./assets/assets/popular-post/m-blog-3.jpg" alt="Blog1">
+                                    </div>
+                                    <div class="postdetails">
+                                        <span><i class="uil uil-calendar-alt"></i>&nbsp;&nbsp;March 17, 2022</span>
+                                        <span>3 Comments</span>
+                                    </div>
+                                </div>
+                                <div class="posttitle">
+                                 <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam,
+                                                possimus!</a></h2>
+                                </div>
+                        <!--x Blog 3 x-->  
+                        
+                        
+                        <!-- Blog 4 -->
+                        <div class="post">
+                             <div class="postimage">
+                                <div>
+                                    <img src="./assets/assets/popular-post/m-blog-4.jpg" alt="Blog1">
+                                </div>
+                                <div class="postdetails">
+                                <span><i class="uil uil-calendar-alt"></i>&nbsp;&nbsp;March 16,
+                                         2022</span>
+                                <span>1 Comments</span>
+                                </div>
+                             </div>
+                             <div class="posttitle">
+                             <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                         Totam, possimus!</a></h2>
+                             </div>
+                        <!--x Blog 4 x-->  
+                        
+                        
+                        <!-- Blog 5 -->
+                        <div class="post">
+                            <div class="postimage">
+                                <div>
+                                    <img src="./assets/assets/popular-post/m-blog-5.jpg" alt="Blog1">
+                                </div>
+                                 <div class="postdetails">
+                                    <span><i class="uil uil-calendar-alt"></i>&nbsp;&nbsp;March 15,
+                                     2022</span>
+                                    <span>4 Comments</span>
+                                 </div>
+                            </div>
+                            <div class="posttitle">
+                                <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                      elit. Totam, possimus!</a></h2>
+                            </div>
+                        </div>
+                        <!--x Blog 5 x-->
+
+
+                                <!-------------[[NewsLetter]]----------->
+                                        <div class="newsletter">
+                                            <h1>Newsletter</h1>
+                                            <div class="form">
+                                                <form action="noaction.php" class="form1">
+                                                    <input type="text" name="" id="input1" placeholder="Email">
+                                                    <br>
+                                                    <button class="btn form-button">Subscribe</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                <!-------------[NewsLetter]----------->        
+
+
+
+                                <!-------------[[Popular Tags]]----------->
+                                        <div class="populartags">
+                                            <h1>Popular Tags</h1>
+                                            <div class="tags">
+                                                <span class="tag"><a href="#">Software</a></span>
+                                                <span class="tag"><a href="#">Lifestyle</a></span>
+                                                <span class="tag"><a href="#">Beauty</a></span>
+                                                <span class="tag"><a href="#">Cooking</a></span>
+                                                <span class="tag"><a href="#">Health</a></span>
+                                                <span class="tag"><a href="#">Other</a></span>
+                                            </div>
+                                        </div>
+                                <!-------------[Popular Tags]----------->  
+                                
+                <!------------[SideBar]------------>                  
+                </aside>
+            </div>
+        </section>
+
+
+
+
+        <!-----------------[Site Content]---------------->
+
+    </main>
+    <!-----x----<<<<<<<<<<<Main Section>>>>>>>>>>--x--->
+
+
+
+
+    <!-------------------<<<Footer>>>--------------->
+    <footer class="footer">
+        <div class="footcontainer">
+
+        <!------------[[About Us Section]]------------>      
+            <div class="about-us">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti a tempora eum, iste possimus
+                    maxime!</p>
+            </div>
+        <!------------[About Us Section]------------>  
+
+        
+        <!------------[[Instagram Section]]------------>  
+            <div class="instagram">
+                <h1>Instagram</h1>
+                <div class="flexrow">
+                    <img src="./assets/assets/instagram/thumb-card3.png" alt="insta3">
+                    <img src="./assets/assets/instagram/thumb-card4.png" alt="insta4">
+                    <img src="./assets/assets/instagram/thumb-card5.png" alt="insta5">
+                    <img src="./assets/assets/instagram/thumb-card6.png" alt="insta6">
+                    <img src="./assets/assets/instagram/thumb-card7.png" alt="insta7">
+                    <img src="./assets/assets/instagram/thumb-card8.png" alt="insta8">
+                </div>
+            </div>
+        <!------------[Instagram Section]------------>  
+            
+        
+        
+        <!------------[[NewsLetter]]------------>  
+            <div class="newsletter">
+                <h1>Newsletter</h1>
+                <form action="noaction.php">
+                    <input type="text" name="" id="input2" placeholder="Email"><span><i
+                            class="uil uil-angle-double-right"></i></span>
+                </form>
+            </div>
+        <!------------[NewsLetter]------------>  
+
+
+        <!------------[[Follow Us/Social Links Section]]------------>  
+            <div class="follow">
+                <h1>Follow Us</h1>
+                <p>Let Us Be Social</p>
+                <div>
+                    <a href="#"><i class="uil uil-twitter"></i></a>
+                    <a href="#"><i class="uil uil-youtube"></i></a>
+                    <a href="#"><i class="uil uil-instagram"></i></a>
+                    <a href="#"><i class="uil uil-github"></i></a>
+                </div>
+            </div>
+        <!------------[Follow Us/Social Links Section]------------>  
+            
+
+        </div>
+
+       <!------------[[Copy Rights and Scroll Back to Top Button]]------------>  
+            <div class="copyright">
+            <h2>Copyright © 2022 All rigths reserved by <a href="https://github.com/LeafVI" target="_blank">Leaf <i
+                        class="uil uil-github"></i></a></h2>
+        </div>
+        <div class="moveup"><span><i class="uil uil-angle-double-up"></i></span></div>
+        <!------------[Copy Rights and Scroll Back to Top Button]------------>  
+   
+   
+   
+   
+    </footer>
+
+
+    <!----------x--------<<<Footer>>>------x-------->
     <!--Jquery File-->
     <script src="./JS/Jquery.min.js"></script>
+
+    <!--Owl Carousel JS File-->
+    <script src="./JS/owl.carousel.min.js"></script>
 
 
     <!--JS File-->
     <script src="./JS/main.js"></script>
 </body>
+
 </html>
